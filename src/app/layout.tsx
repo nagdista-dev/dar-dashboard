@@ -14,7 +14,7 @@ const grotesk = Space_Grotesk({ subsets: ["latin"], weight: ["500", "700"], disp
 const alexandria = Alexandria({ subsets: ["arabic"], weight: ["600", "700"], display: "swap", variable: "--font-alexandria" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dar-dashboard.vercel.app"),
+  metadataBase: new URL("https://dar-store-dashboard.vercel.app"),
   title: "دار — لوحة تحكم المتجر | Dar Store Dashboard",
   description:
     "لوحة تحكم تجريبية لمتجر إلكتروني: طلبات، إيرادات، صلاحيات للمدير والموظف، فلترة وتصدير Excel، عربي وإنجليزي. تصميم وتنفيذ محمود النجدي.",

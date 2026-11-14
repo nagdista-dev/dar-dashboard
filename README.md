@@ -7,6 +7,8 @@ role-based access and Excel export. It is a **concept project** with seeded fake
 
 ## Try it
 
+**Live demo:** <https://dar-store-dashboard.vercel.app/>
+
 | Role | Email | Password | Sees |
 | --- | --- | --- | --- |
 | Admin | `admin@dar.demo` | `admin123` | Everything: revenue, export, team |
