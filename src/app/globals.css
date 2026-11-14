@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  /* Nagdista identity tokens (NAGDISTA-IDENTITY.md §5.1) */
+  --bg: #f7f4ef;
+  --surface: #fbf9f5;
+  --surface-2: #efeae1;
+  --ink: #12110f;
+  --ink-2: #2a2722;
+  --muted: #6b665e;
+  --line: rgba(18, 17, 15, 0.14);
+  --brand: #ff4d00;
+  --brand-strong: #c93d00;
+  --brand-soft: #ffe3d6;
+  --on-dark: #f7f4ef;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-soft: var(--brand-soft);
+  --color-paper: var(--on-dark);
+  --font-sans: var(--font-inter), var(--font-plex), system-ui, sans-serif;
+  --font-display: var(--font-grotesk), var(--font-alexandria), system-ui, sans-serif;
+}
+
+html[lang="ar"] {
+  --font-sans: var(--font-plex), var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-alexandria), var(--font-grotesk), system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.dot-grid {
+  background-image: radial-gradient(rgba(247, 244, 239, 0.16) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
